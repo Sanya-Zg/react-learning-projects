@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Kalam: "Kalam", cursive;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to top, #ade0ec, #141f2d);;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper button {
+    padding: 10px 20px;
+    background: linear-gradient(to top, #dfcfb1, #584e3b);
+    color: #141f2d;
+    font-weight: bold;
+    font-style: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.accordion {
+    width: 500px;
+}
+.item {
+    background: linear-gradient(to bottom, #dfcfb1, #584e3b) ;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.title {
+    font-family: var(--font-Roboto);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #141f2d;
+
+    cursor: pointer;
+}
+.title span {
+    margin-left: 20px;
+}
+.content {
+    font-family: var(--font-Kalam);
+    color: #ade0ec;
+    height: auto;
+    font-size: 20px;
+}

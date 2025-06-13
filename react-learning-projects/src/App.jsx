@@ -1,11 +1,11 @@
 
-import Accordian from './components/accordion'
+import Accordion from './components/accordion'
 
 function App() {
 
   return (
     <>
-      <Accordian />
+      <Accordion />
     </>
   )
 }
