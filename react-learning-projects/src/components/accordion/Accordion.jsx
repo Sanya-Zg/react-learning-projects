@@ -1,6 +1,6 @@
 import { useState } from "react";
 import data from "./data";
-import "./styles.css";
+import styles from './Accordion.module.css';
 
 export default function Accordion() {
   const [selected, setSelected] = useState(null);
@@ -30,16 +30,16 @@ export default function Accordion() {
   }
 
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <button onClick={() => setMultiSelection(!multiSelection)}>
         Multi Selector
       </button>
-      <div className="accordion">
+      <div className={styles.accordion}>
         {data && data.length > 0 ? (
           data.map((dataItem) => (
-            <div className="item" key={dataItem.id}>
+            <div className={styles.item} key={dataItem.id}>
               <div
-                className="title"
+                className={styles.title}
                 onClick={
                   multiSelection
                     ? () => handleMultiSelection(dataItem.id)
@@ -57,7 +57,7 @@ export default function Accordion() {
                     <div className="content">{dataItem.answer}</div>
                   )} */}
               {selected === dataItem.id || multiples.indexOf(dataItem.id) !== -1 ? (
-                <div className="content">{dataItem.answer}</div>
+                <div className={styles.content}>{dataItem.answer}</div>
               ) : null}
             </div>
           ))

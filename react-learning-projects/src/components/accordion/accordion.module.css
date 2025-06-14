@@ -5,7 +5,7 @@
 }
 body {
     margin: 0;
-    background: linear-gradient(to top, #ade0ec, #141f2d);;
+    
 }
 .wrapper {
     display: flex;
@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(to top, #ade0ec, #141f2d);
 }
 .wrapper button {
     padding: 10px 20px;
