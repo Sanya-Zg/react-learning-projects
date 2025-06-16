@@ -1,0 +1,10 @@
+.cont {
+    display: flex;
+    justify-content: center;
+}
+.active {
+    color: gold;
+}
+.unactive {
+    color: gray;
+}
