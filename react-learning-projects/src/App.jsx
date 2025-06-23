@@ -7,11 +7,11 @@ import ImageSlider from './components/image-slider/ImageSlider';
 function App() {
   return (
     <>
-      {/* <Accordion />
+      <Accordion />
       <List_checkbox />
       <RandomColor />
-      <StarRating numStars={10}/> */}
-      <ImageSlider url={'https://picsum.photos/v2/list'} limit={'3'} page={1} />
+      <StarRating numStars={10}/>
+      <ImageSlider url={'https://picsum.photos/v2/list'} limit={'10'} page={1} />
     </>
   );
 }
